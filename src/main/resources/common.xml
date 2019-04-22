@@ -1,0 +1,28 @@
+<root>
+    <!-- 日志输出级别 debug、info、warn、error -->
+    <log_level>debug</log_level>
+
+    <!-- 资源提供者 支持file、es、mongo -->
+    <source>es</source>
+
+    <!-- 资源接收者 支持file、es、mongo -->
+    <target>file</target>
+
+    <!-- 单批次处理数据条数 -->
+    <batch_num>2</batch_num>
+
+    <!-- 需要转移的资源标识 -->
+    <!-- *: 匹配所有 -->
+    <!-- ^$name: 匹配开头/结尾 -->
+    <!-- ^name: 匹配开头 -->
+    <!-- $name: 匹配结尾 -->
+    <!-- name: 全匹配 -->
+    <!-- 后四项可配合使用  -->
+    <resources>^test</resources>
+	
+	<!-- 目标资源已存在 -->
+	<!-- cover: 覆盖 -->
+	<!-- skip: 跳过 -->
+    <!-- append: 追加 -->
+    <already_exists>cover</already_exists>
+</root>

@@ -1,0 +1,15 @@
+<root>
+    <file>
+        <!-- 存放文件目录 默认项目根目录或jar包所在目录下的data文件夹 -->
+        <path>default</path>
+    </file>
+    <es>
+        <hosts>192.168.6.3:9200</hosts>
+    </es>
+    <mongo>
+        <hosts>192.168.6.3:27017</hosts>
+        <username>admin</username>
+        <password>111111</password>
+        <database>test</database>
+    </mongo>
+</root>
