@@ -92,11 +92,18 @@ public class Context {
                 Log.warn("资源" + targetRes + "已存在，已跳过，若需覆盖/追加请修改common.xml/already_exists参数");
                 return 0;
             }
+        } else {
+            if (!target.createNewResource(targetRes)) {
+                Log.error("资源" + targetRes + "创建失败");
+                return 0;
+            }
         }
         int total = 0;
         int size;
         do {
             List<String> list = source.batchGet(sourceRes);
+            if (list.size() == 0)
+                break;
             size = target.batchSet(targetRes, list);
             total += size;
             if (total % (CommonConf.BATCH_NUM * 5) == 0)
