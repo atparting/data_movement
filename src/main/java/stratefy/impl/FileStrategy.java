@@ -1,7 +1,8 @@
-package stratefy;
+package stratefy.impl;
 
 import config.CommonConf;
 import config.ResourceConf;
+import stratefy.Strategy;
 import util.common.FileUtil;
 import util.log.Log;
 

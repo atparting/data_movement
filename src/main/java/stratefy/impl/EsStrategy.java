@@ -1,4 +1,4 @@
-package stratefy;
+package stratefy.impl;
 
 import com.alibaba.fastjson.JSON;
 import config.CommonConf;
@@ -11,6 +11,7 @@ import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
+import stratefy.Strategy;
 import util.database.EsUtil;
 import util.log.Log;
 

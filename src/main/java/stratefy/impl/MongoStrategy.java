@@ -1,4 +1,4 @@
-package stratefy;
+package stratefy.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
@@ -9,6 +9,7 @@ import com.mongodb.client.MongoDatabase;
 import config.CommonConf;
 import config.ResourceConf;
 import org.bson.Document;
+import stratefy.Strategy;
 import util.database.MongoUtil;
 import util.log.Log;
 

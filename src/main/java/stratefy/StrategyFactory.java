@@ -1,6 +1,9 @@
 package stratefy;
 
 import config.CommonConf;
+import stratefy.impl.EsStrategy;
+import stratefy.impl.FileStrategy;
+import stratefy.impl.MongoStrategy;
 import util.log.Log;
 
 public class StrategyFactory {
